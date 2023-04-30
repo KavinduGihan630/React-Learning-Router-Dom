@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav>
       <ul>
         <li>
-          <Link to="/" replace>
+          <Link to="/" state="Hi mf">
             Home
           </Link>
         </li>

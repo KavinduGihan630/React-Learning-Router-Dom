@@ -6,7 +6,7 @@ export default function Notfound() {
 
   useEffect(() => {
     setTimeout(() => {
-      navigate("/");
+      navigate("/", { state: "not found ass hole" });
     }, 1000);
   }, []);
   return (

@@ -101,3 +101,13 @@ useOutletContext(); eken use kalaki anikwage ita passe
 }, []);
 userNavigate   eken vena page valata navigate karanna
 
+
+
+state= 
+use kalaki component athara data huwamaru karanna
+
+
+
+useSearchparams
+search ewata
+

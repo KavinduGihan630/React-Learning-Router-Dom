@@ -1,10 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Book from "./pages/Book";
 import Navbar from "./components/Navbar";
-import BookList from "./pages/BookList";
-import NewBook from "./pages/NewBook";
+import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+import BooksRoutes from "./Routes/BooksRoutes";
 
 function App() {
   return (
@@ -12,9 +10,9 @@ function App() {
       <Navbar> </Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/books" element={<BookList />} />
-        <Route path="/books/:id" element={<Book />} />
-        <Route path="/books/new" element={<NewBook />} />
+
+        <Route path="/books*" element={<BooksRoutes />} />
+
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

@@ -20,3 +20,84 @@ Route path="/" element={<Home />} />
 <Route path="*" element={<NotFound />} />
 
 path="*"  kiyawenne dila thiyana path hara venas path ekak awama oya component eka denna(not found page)
+
+
+
+{/* <Route path="/books" element={<BookList />} />
+<Route path="/books/:id" element={<Book />} />
+<Route path="/books/new" element={<NewBook />} /> */}
+oya tike venuwata
+
+<Route path="/books">
+<Route index element={<BookList />} />
+<Route path=":id" element={<Book />} />
+<Route path="new" element={<NewBook />} />
+</Route>
+
+
+<div className="container">
+      <Link to="/books/1">Book 1</Link>
+      <br />
+      <Link to="/books/2">Book 2</Link>
+      <br />
+      <Link to="/books/new">New book</Link>
+      <br />
+      <Outlet  />
+</div>
+
+<Outlet /> ekata vatenne ithuruwa 
+
+
+
+
+<Route element={<BookLayout />}>
+          <Route index element={<BookList />} />
+          <Route path=":id" element={<Book />} />
+          <Route path="new" element={<NewBook />} />
+ </Route>
+ athule raoute okkotma vatenwa BookLayout eka ita passe ithurwa wada karanaw
+
+
+<outlet/> elke one single varieble ekak pass kalaki(inside component okkotama use kalaki eka)
+useOutletContext(); eken use kalaki anikwage ita passe
+
+
+
+
+
+
+ <Route path="/books" element={<BookLayout />}>
+          <Route index element={<BookList />} />
+          <Route path=":id" element={<Book />} />
+          <Route path="new" element={<NewBook />} />
+</Route>
+
+ <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Routes location="/books">
+        <Route path="/books" element={<h1>Extea content</h1>} />
+</Routes>
+
+/books   path eketo routes 2k wada karanaw
+
+
+
+
+ <Route path="/books*" element={<BooksRoutes />} />
+ routing infromation vena file ekata dnna
+
+
+
+
+ <link to="/" replace>  -    oya replace eka thiyanako thiyana URL eka histry eken remove venava (loging unama apahu enne nathi venna vage use krnw)
+ <link to="/" reload>   -      full Page ekam repload venava 
+
+
+
+  useEffect(() => {
+    setTimeout(() => {
+      navigate("/");
+    }, 1000);
+}, []);
+userNavigate   eken vena page valata navigate karanna
+

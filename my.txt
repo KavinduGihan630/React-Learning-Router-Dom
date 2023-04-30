@@ -1,3 +1,22 @@
 there i two routers in react
 1.native react router
 2.react dom router
+
+userparams hook
+useParams() return all customer paramenter in our routes
+
+
+
+<Route path="/books/:id" element={<Book />} />
+<Route path="/books/new" element={<NewBook />} />
+oya routes 2n  /books/new/ kiyana url eka awama wada krnne NewBook eka
+Reason- reatc-dom eka oya vage samana ewa 2k awama hardcode karapu eka gannawa(not the old version though)
+
+
+Route path="/" element={<Home />} />
+<Route path="/books" element={<BookList />} />
+<Route path="/books/:id" element={<Book />} />
+<Route path="/books/new" element={<NewBook />} />
+<Route path="*" element={<NotFound />} />
+
+path="*"  kiyawenne dila thiyana path hara venas path ekak awama oya component eka denna(not found page)
